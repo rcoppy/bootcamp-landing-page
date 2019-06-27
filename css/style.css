@@ -1,0 +1,225 @@
+@import url('normalize.css');
+@import url('https://use.fontawesome.com/releases/v5.6.3/css/all.css');
+@import url('components/slick_carousel.css');
+@import url('slick.css');
+@import url('slick-theme.css');
+body {
+    color: white;
+    margin: 0;
+}
+
+:root {
+    --container-color: #857153;
+}
+
+p {
+    font-family: 'Indie Flower', cursive;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+    font-family: 'Indie Flower', cursive;
+}
+
+.logo-font {
+    font-family: 'Lobster', cursive;
+}
+
+header h1,
+header h2,
+header h3,
+header h4,
+header h5,
+header h6 {
+    -webkit-filter: drop-shadow( 3px 3px 2px rgba(0, 0, 0, .7));
+    filter: drop-shadow( 3px 3px 2px rgba(0, 0, 0, .7));
+}
+
+.before-diagonal:before {
+    content: "";
+    background-image: url("data:image/svg+xml;charset=utf8,%3Csvg xmlns='http://www.w3.org/2000/svg' width='100' height='100' viewBox='0 0 100 100' preserveAspectRatio='none'%3E%3Cpolygon points='0,100 100,0 100,100' style='fill:%23857153%3B' /%3E%3C/svg%3E");
+    background-repeat: no-repeat;
+    background-size: 100% 100%;
+    display: block;
+    height: 5.15em;
+    position: relative;
+    width: 100%;
+    top: -5.15em;
+}
+
+.before-diagonal:after {
+    content: "";
+    background-image: url("data:image/svg+xml;charset=utf8,%3Csvg xmlns='http://www.w3.org/2000/svg' width='100' height='100' viewBox='0 0 100 100' preserveAspectRatio='none'%3E%3Cpolygon points='0,0 100,0 100,100' style='fill:%23857153%3B' /%3E%3C/svg%3E");
+    background-repeat: no-repeat;
+    background-size: 100% 100%;
+    display: block;
+    height: 5.15em;
+    position: relative;
+    width: 100%;
+    top: 5.15em;
+    -webkit-filter: drop-shadow( 6px 6px 10px rgba(0, 0, 0, .7));
+    filter: drop-shadow( 6px 12px 10px rgba(0, 0, 0, .7));
+}
+
+header {
+    height: 30vh;
+    flex-grow: 0;
+}
+
+.container {
+    width: 77%;
+    margin: 10% auto;
+}
+
+#page-container {
+    position: relative;
+    min-height: 100vh;
+    display: flex;
+    flex-direction: column;
+}
+
+#content-wrapper {
+    background-color: var(--container-color);
+    width: 100%;
+    flex-grow: 1;
+    display: flex;
+    flex-direction: column;
+    z-index: 2;
+}
+
+#content-container {
+    width: 66%;
+    margin: 0 auto;
+    background-color: var(--container-color);
+    flex-grow: 1;
+}
+
+footer {
+    position: absolute;
+    /* position 0 pixels from bottom of page container (NOT bottom of viewport) */
+    bottom: 0;
+    height: 40vh;
+    width: 100%;
+    flex-grow: 0;
+    z-index: 1;
+}
+
+img.head-photo {
+    position: absolute;
+    display: inline-block;
+    width: 20%;
+    right: 27%;
+    top: 5%;
+}
+
+body {
+    margin: 0;
+}
+
+body.background-cover-blurred {
+    overflow: auto;
+}
+
+body.background-cover-blurred:before {
+    background: no-repeat center center fixed;
+    background-image: url("../images/background.jpg");
+    background-size: cover;
+    height: 110vh;
+    position: fixed;
+}
+
+*,
+*:before,
+*:after {
+    box-sizing: border-box;
+}
+
+.background-cover-blurred {
+    overflow: hidden;
+    position: relative;
+}
+
+footer.background-cover-blurred:before {
+    background-image: url("../images/footer.jpg");
+    background-position: top;
+}
+
+header.background-cover-blurred:before {
+    background-image: url("../images/hero.jpg");
+    background-position: center;
+}
+
+.background-cover-blurred:before {
+    content: "";
+    position: absolute;
+    display: block;
+    top: -5%;
+    left: -5%;
+    right: 0;
+    bottom: 0;
+    z-index: -1;
+    width: 110%;
+    height: 110%;
+    -webkit-filter: blur(5px);
+    -moz-filter: blur(5px);
+    -o-filter: blur(5px);
+    -ms-filter: blur(5px);
+    filter: blur(5px);
+    background-size: cover;
+}
+
+.card:first-child {
+    margin-top: 20px;
+}
+
+.card {
+    background-color: rgba(255, 200, 200, 0.5);
+    width: 90%;
+    padding: 20px 30px;
+    margin-bottom: 40px;
+    margin-left: auto;
+    margin-right: auto;
+    border-radius: 5px;
+    -webkit-box-shadow: 0px 9px 14px 0px rgba(0, 0, 0, 0.69);
+    -moz-box-shadow: 0px 9px 14px 0px rgba(0, 0, 0, 0.69);
+    box-shadow: 0px 9px 14px 0px rgba(0, 0, 0, 0.69);
+}
+
+.card.slick-container h2 {
+    text-align: center;
+}
+
+.card.card-profile-right {
+    padding: 0 0 0 30px;
+    display: flex;
+    overflow: hidden;
+    min-height: 30vh;
+}
+
+.card.card-profile-left {
+    padding: 0 30px 0 0;
+    display: flex;
+    overflow: hidden;
+    min-height: 30vh;
+}
+
+.card.card-profile-left .content {
+    margin-left: 2em;
+}
+
+.card-profile-right .side-profile,
+.card-profile-left .side-profile {
+    width: 30%;
+    flex-grow: 0;
+    background-size: cover;
+    background-position: center;
+}
+
+.card-profile-right .content,
+.card-profile-left .content {
+    flex-grow: 1;
+}

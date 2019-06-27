@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="utf-8">
+    <title>Xela's Beanz | Excellent Bean Fodder</title>
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.6.3/css/all.css">
+    <link rel="stylesheet" href="css/style.css">
+    <link href="https://fonts.googleapis.com/css?family=Indie+Flower|Lobster&display=swap" rel="stylesheet">
+</head>
+
+<body>
+    <div id="page-container">
+        <header class="background-cover-blurred">
+            <div class="container">
+                <h1><span class="logo-font">Xela's</span> BEANZ</h1>
+                <p>Schmucking legumes since 1998</p>
+            </div>
+            <img class="head-photo" src="images/alex_head.png" alt="alex">
+        </header>
+
+        <div id="content-wrapper" class="before-diagonal">
+            <div id="content-container">
+                <h1><span class="logo-font">Hello!</span> Our Beanz come in All shapes and Sizes</h1>
+                <section class="card slick-container">
+                    <div class="slick-carousel autoplay">
+                        <div><img src="images/beans_1.png"></div>
+                        <div><img src="images/beans_2.png"></div>
+                        <div><img src="images/beans_3.png"></div>
+                        <div><img src="images/bowens_beans.png"></div>
+                    </div>
+                    <h2>Only the finest specimens make it into our cans.</h2>
+                </section>
+
+                <section class="card card-profile-right">
+                    <div class="content">
+                        <h2>How it works</h2>
+                        <p>Ya dig a hole, ram a beenie in, and pray like it's the <strong>rapture!</strong></p>
+                        <p>In about <strong>nine</strong> short months, a baby puppy crawls out.</p>
+                        <h2><strong>And that's beans!!</strong></h2>
+                    </div>
+                    <div class="side-profile" style="background-image: url('images/soil.jpg');">
+                    </div>
+                </section>
+
+                <section class="card card-profile-left">
+                    <div class="side-profile" style="background-image: url('images/happy_guy.jpg'); background-position: top;"></div>
+                    <div class="content">
+                        <h2>Wow!</h2>
+                        <p>Look how happy this bean-eater is! Truly magical ✨✨✨</p>
+                    </div>
+
+                </section>
+            </div>
+        </div>
+
+        <footer class="background-cover-blurred">
+            <div class="container">
+                <h1 style="color: white;">the subject of this photo is not a bean 😉</h1>
+            </div>
+        </footer>
+    </div>
+
+    <script src="https://code.jquery.com/jquery-3.4.1.min.js" integrity="sha256-CSXorXvZcTkaix6Yvo6HppcZGetbYMGWSFlBw8HfCJo=" crossorigin="anonymous"></script>
+    <script type="text/javascript" src="slick.min.js"></script>
+
+    <script>
+        $(document).ready(function() {
+            $('.autoplay').slick({
+                slidesToShow: 3,
+                slidesToScroll: 1,
+                autoplay: true,
+                autoplaySpeed: 2000,
+            });
+        });
+    </script>
+
+</body>
+
+</html>
